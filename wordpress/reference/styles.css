@@ -53,6 +53,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .navigation a, .site-footer a { transition: color 180ms ease; }
 .hero-cointaier{ background: var(--coral); width:100%;}
 .hero { margin: 0; padding: 0 clamp(28px, 4.8vw, 76px); background: var(--coral); overflow: hidden; }
+.hero .text-link:hover, .hero-foot a:hover{color:white;}
 .hero-main { display: grid; grid-template-columns: 1.25fr 1fr; align-items: center; min-height: 680px; gap: 10px; padding: 58px 0 34px; }
 .hero-copy { position: relative; z-index: 2; padding-bottom: 10px; }
 .hero h1 { font-size: clamp(48px, 6.35vw, 92px); line-height: 1.025; font-weight: 500; }
@@ -96,6 +97,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .case-links { display: flex; flex-direction: column; align-items: flex-start; gap: 5px; margin-top: 32px; }
 .case-links .text-link:first-child { border-bottom: 1px solid var(--ink); padding-bottom: 8px; }
 .growth-band { margin: 0 24px; padding: 54px clamp(28px, 5vw, 80px); background: var(--coral); display: flex; justify-content: space-between; align-items: center; gap: 40px; }
+.growth-band .text-link:hover{color:white;}
 .growth-band h2 { font-size: clamp(36px, 4vw, 58px); }
 .growth-actions { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; }
 .process { padding-top: 140px; padding-bottom: 130px; display: grid; grid-template-columns: .9fr 1.35fr; gap: 8%; align-items: start; }
