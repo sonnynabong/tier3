@@ -1,0 +1,13 @@
+---
+import ProcessStep from './ProcessStep.astro';
+import { processIntro, processSteps } from '../data/process';
+---
+<section class="process section-wrap" id="system" aria-labelledby="process-title">
+  <div class="process-intro">
+    <h2 id="process-title" set:html={processIntro.titleHtml} />
+    <p>{processIntro.body}</p>
+  </div>
+  <ol class="process-list">
+    {processSteps.map((step) => <ProcessStep step={step} />)}
+  </ol>
+</section>

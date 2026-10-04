@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import TextLink from './TextLink.astro';
+import type { ProcessStep } from '../data/process';
+import { growtoxUrl } from '../data/site';
+
+interface Props {
+  step: ProcessStep;
+}
+
+const { step } = Astro.props;
+---
+<li class="process-row" data-reveal="step">
+  <span class="step-number" aria-hidden="true">{step.number}</span>
+  <div class="process-content">
+    <h3 set:html={step.titleHtml} />
+    <p>{step.body}</p>
+    <TextLink href={growtoxUrl} icon="arrow-up">See the system</TextLink>
+  </div>
+  <Image src={step.illustration} width={170} height={170} alt="" loading="lazy" decoding="async" />
+</li>
