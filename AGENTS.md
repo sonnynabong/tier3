@@ -6,6 +6,7 @@ Durable workspace facts and recurring user preferences for Tier3 Media / Growtox
 
 - Shipping site: static Astro app in `astro/` (no UI framework, no local form submission; CTAs link to live Tier3 services).
 - Snapshot: `wordpress/reference/` remains the HTML/CSS/JS reference of the same homepage.
+- WordPress demo: block theme in `wordpress/themes/tier3`, local stack in `wordpress/compose.yaml` (WordPress 7.1.2). Activate via `wordpress/docker/setup.ps1`; the theme seeds media, menus, and the front page.
 - Git: foundation history on `main`; homepage work uses one commit per goal.
 - Vercel: GitHub integration with Root Directory `astro` and Framework Preset Astro. Do not create a Vercel project from the CLI unless asked.
 - Impeccable on Windows: `c:\Users\User\.cursor\skills\impeccable\scripts\impeccable.cmd` with project cwd at repo root. Live iteration is configured for `astro/src/pages/index.astro`.
