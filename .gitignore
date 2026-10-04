@@ -9,6 +9,8 @@ Thumbs.db
 .impeccable/cache/
 .verification/
 
-.cursor/
+.cursor/*
+!.cursor/skills/
+!.cursor/skills/**
 .codex/
 .claude/
