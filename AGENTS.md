@@ -4,9 +4,11 @@ Durable workspace facts and recurring user preferences for Tier3 Media / Growtox
 
 ## Workspace
 
-- Shipped site: static HTML, CSS, and JavaScript under `wordpress/reference/` (no build step, no local form submission; CTAs link to live Tier3 services).
-- Git: foundation history on `main`; active redesign work on `redesign`, one commit per goal. Remote deployment is not configured in-repo.
-- Impeccable on Windows: `c:\Users\User\.cursor\skills\impeccable\scripts\impeccable.cmd` with project cwd at repo root. Live iteration is configured for `wordpress/reference/index.html`.
+- Shipping site: static Astro app in `astro/` (no UI framework, no local form submission; CTAs link to live Tier3 services).
+- Snapshot: `wordpress/reference/` remains the HTML/CSS/JS reference of the same homepage.
+- Git: foundation history on `main`; homepage work uses one commit per goal.
+- Vercel: GitHub integration with Root Directory `astro` and Framework Preset Astro. Do not create a Vercel project from the CLI unless asked.
+- Impeccable on Windows: `c:\Users\User\.cursor\skills\impeccable\scripts\impeccable.cmd` with project cwd at repo root. Live iteration is configured for `astro/src/pages/index.astro`.
 
 ## Content and scope
 

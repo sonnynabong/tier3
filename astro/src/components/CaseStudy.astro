@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets';
+import TextLink from './TextLink.astro';
+import karisha from '../assets/karisha-madden.webp';
+import { homeUrl, resultsUrl } from '../data/site';
+---
+<section class="case-study" aria-labelledby="case-title">
+  <div class="case-image" data-reveal="image">
+    <Image
+      src={karisha}
+      width={1800}
+      height={987}
+      alt="Dr. Karisha Madden standing on a bridge"
+      loading="lazy"
+      decoding="async"
+    />
+  </div>
+  <div class="case-content" data-reveal="quote">
+    <blockquote>
+      <h2 id="case-title">“I did $71k in brand new patients in one month.”</h2>
+      <p>“Best investment ever.”</p>
+    </blockquote>
+    <div class="case-attribution">
+      <strong>Dr. Karisha Madden</strong>
+      <span>Voted Houston’s #1 Dentist in 2018</span>
+    </div>
+    <div class="case-links">
+      <TextLink href={homeUrl} icon="arrow-up" target="_blank" rel="noopener noreferrer">
+        View case study on Tier3 Media
+      </TextLink>
+      <TextLink href={resultsUrl} icon="arrow">See more results</TextLink>
+    </div>
+  </div>
+</section>

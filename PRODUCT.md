@@ -8,7 +8,7 @@ web
 
 ## Stack
 
-User-confirmed plain static HTML, CSS, and JavaScript. Code-first workflow.
+User-confirmed Astro static site in `/astro`, with `wordpress/reference` kept as an HTML snapshot. Code-first workflow. Vercel Root Directory is `astro`.
 
 ## Users and purpose
 
@@ -16,7 +16,7 @@ Tier3 Media serves aesthetic practice owners seeking patient growth through its 
 
 ## Constraints
 
-Recreate all existing homepage sections with verified content. No invented testimonials, statistics, services, or relationships. Static only; no submissions, backend, theme integration, publishing, or remote Git operations. Business links lead to the live website or its verified hosted form.
+Recreate all existing homepage sections with verified content. No invented testimonials, statistics, services, or relationships. Static only; no local submissions or backend. Business links lead to the live website or its verified hosted form. Deploy via Vercel GitHub integration (Root Directory `astro`).
 
 ## Brand commitments
 

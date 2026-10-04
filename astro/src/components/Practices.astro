@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import TextLink from './TextLink.astro';
+import { practiceLogos } from '../data/practices';
+import { resultsUrl } from '../data/site';
+---
+<section class="practices" aria-labelledby="practices-title">
+  <div class="section-wrap">
+    <div class="section-heading">
+      <h2 id="practices-title">Join these<br />growing practices.</h2>
+      <p>And many more.</p>
+    </div>
+    <ul class="logo-grid" aria-label="Client practices">
+      {
+        practiceLogos.map((logo) => (
+          <li>
+            <Image
+              src={logo.src}
+              width={logo.width}
+              height={logo.height}
+              alt={logo.alt}
+              loading="lazy"
+              decoding="async"
+            />
+          </li>
+        ))
+      }
+    </ul>
+    <TextLink href={resultsUrl} icon="arrow-up">See what they’re saying</TextLink>
+  </div>
+</section>

@@ -1,0 +1,36 @@
+---
+import Button from './Button.astro';
+import TextLink from './TextLink.astro';
+import { qualifyUrl, resultsUrl } from '../data/site';
+
+const questions = [
+  { html: 'Do you feel stagnant and want to <strong>grow exponentially?</strong>' },
+  {
+    html: 'Are you stuck in the weeds with marketing and aren’t getting the <strong>results you desperately need?</strong>',
+  },
+  {
+    html: 'Are you looking for <strong>proven shortcuts</strong> to increase brand awareness, get leads and have more bookings?',
+  },
+  {
+    html: 'Do you have a great practice but don’t know how to <strong>attract the right patients?</strong>',
+  },
+  {
+    html: 'Is your competition beating you with better marketing and you want a <strong>competitive edge?</strong>',
+  },
+];
+---
+<section class="closing section-wrap" aria-labelledby="closing-title">
+  <div class="closing-title">
+    <h2 id="closing-title">What’s<br />stopping<br /><span>you?</span></h2>
+    <svg class="closing-arrow" aria-hidden="true"><use href="#arrow-up"></use></svg>
+  </div>
+  <div class="closing-content">
+    <ul class="questions">
+      {questions.map((question) => <li set:html={question.html} />)}
+    </ul>
+    <div class="closing-actions">
+      <Button href={qualifyUrl} variant="violet">See if my practice qualifies</Button>
+      <TextLink href={resultsUrl} icon="arrow">See more results</TextLink>
+    </div>
+  </div>
+</section>

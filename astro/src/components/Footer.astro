@@ -1,0 +1,69 @@
+---
+import { Image } from 'astro:assets';
+import Icon from './Icon.astro';
+import logoWhite from '../assets/logo-white.svg';
+import {
+  careersUrl,
+  contactUrl,
+  email,
+  facebookUrl,
+  growtoxUrl,
+  homeUrl,
+  instagramUrl,
+  phoneDisplay,
+  phoneTel,
+  privacyUrl,
+  qualifyUrl,
+  resultsUrl,
+  storyUrl,
+  twitterUrl,
+} from '../data/site';
+---
+<footer class="site-footer">
+  <div class="footer-main">
+    <div class="footer-brand">
+      <a href="#" aria-label="Tier3 Media — back to top">
+        <Image src={logoWhite} width={220} height={65} alt="Tier3 Media" loading="lazy" />
+      </a>
+      <a class="footer-email" href={`mailto:${email}`}>
+        {email} <Icon name="arrow-up" />
+      </a>
+      <a href={`tel:${phoneTel}`}>{phoneDisplay}</a>
+      <address>
+        197 State Route 18 South<br />
+        Ste 3000-4299<br />
+        East Brunswick, NJ 08816
+      </address>
+    </div>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <div>
+        <h2>Company</h2>
+        <a href={storyUrl}>Our story</a>
+        <a href={contactUrl}>Contact</a>
+        <a href={careersUrl}>Careers <Icon name="arrow-up" /></a>
+      </div>
+      <div>
+        <h2>Resources</h2>
+        <a href={resultsUrl}>Results</a>
+        <a href={homeUrl} target="_blank" rel="noopener noreferrer">
+          Case study <Icon name="arrow-up" />
+        </a>
+      </div>
+      <div>
+        <h2>Product</h2>
+        <a href={growtoxUrl}>Growtox System™</a>
+        <a href={qualifyUrl}>See if I qualify <Icon name="arrow-up" /></a>
+      </div>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© Tier3 Media 2025</span>
+    <a href={privacyUrl}>Privacy policy</a>
+    <nav aria-label="Social media">
+      <a href={facebookUrl}>Facebook</a>
+      <a href={instagramUrl}>Instagram</a>
+      <a href={twitterUrl}>Twitter</a>
+    </nav>
+    <a class="back-top" href="#">Back to top <Icon name="arrow-up" /></a>
+  </div>
+</footer>

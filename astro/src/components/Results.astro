@@ -1,0 +1,17 @@
+---
+import Reveals from './Reveals.astro';
+import Testimonial from './Testimonial.astro';
+import TextLink from './TextLink.astro';
+import { testimonials } from '../data/testimonials';
+import { resultsUrl } from '../data/site';
+---
+<section class="results section-wrap" id="results" aria-labelledby="results-title">
+  <div class="section-heading">
+    <h2 id="results-title">See the results.</h2>
+    <TextLink href={resultsUrl} icon="arrow-up">More client stories</TextLink>
+  </div>
+  <div class="testimonials">
+    {testimonials.map((item) => <Testimonial item={item} />)}
+  </div>
+</section>
+<Reveals />
