@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import type { Testimonial } from '../data/testimonials';
+
+interface Props {
+  item: Testimonial;
+}
+
+const { item } = Astro.props;
+---
+<figure class:list={['testimonial', `testimonial-${item.variant}`]} data-reveal="quote">
+  <div class="quote-mark" aria-hidden="true">“</div>
+  <blockquote>
+    <p>{item.quote}</p>
+  </blockquote>
+  <figcaption>
+    <Image
+      src={item.portrait}
+      width={item.width}
+      height={item.height}
+      alt={item.alt}
+      loading="lazy"
+      decoding="async"
+    />
+    <div>
+      <strong>{item.name}</strong>
+      <span set:html={item.detailHtml} />
+    </div>
+  </figcaption>
+</figure>
