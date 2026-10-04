@@ -1,6 +1,6 @@
 # Static homepage
 
-Target: wordpress/reference/index.html
+Target: astro/src/pages/index.astro
 Mode: Persuade
 
 ## Direction contract
