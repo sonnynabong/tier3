@@ -8,3 +8,7 @@ Thumbs.db
 .impeccable/config.local.json
 .impeccable/cache/
 .verification/
+
+.cursor/
+.codex/
+.claude/
