@@ -26,6 +26,7 @@ p { line-height: 1.65; }
 ul, ol { padding: 0; margin: 0; list-style: none; }
 sup { font-size: .45em; line-height: 0; vertical-align: super; }
 :focus-visible { outline: 3px solid var(--violet); outline-offset: 5px; }
+.hero :focus-visible, .growth-band :focus-visible { outline-color: var(--ink); }
 .icon-library { position: absolute; width: 0; height: 0; overflow: hidden; }
 .icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 1.6; flex-shrink: 0; stroke-linecap: round; stroke-linejoin: round; }
 .skip-link { position: fixed; top: 8px; left: 16px; padding: 14px 20px; color: white; background: var(--ink); z-index: 100; transform: translateY(-150%); }
@@ -81,7 +82,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .testimonial figcaption img { width: 72px; height: 72px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
 .testimonial-lead figcaption img { width: 88px; height: 88px; }
 .testimonial figcaption strong { display: block; font-size: 12px; line-height: 1.7; font-weight: 650; }
-.testimonial figcaption span { display: block; margin-top: 4px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.testimonial figcaption span { display: block; margin-top: 4px; color: var(--muted); font-size: 12px; line-height: 1.7; }
 .case-study { display: grid; grid-template-columns: 1.05fr 1fr; min-height: 640px; margin: 0 24px; background: var(--wash); }
 .case-image { min-height: 570px; position: relative; overflow: hidden; }
 .case-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 16% center; }
@@ -105,7 +106,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .process-row:last-child { border-bottom: 1px solid var(--line); }
 .step-number { color: var(--violet); font-size: 13px; font-weight: 600; padding-top: 5px; font-variant-numeric: tabular-nums; }
 .process-row h3 { font-size: clamp(24px, 2.1vw, 31px); line-height: 1.15; }
-.process-row p { color: var(--muted); font-size: 13px; margin-top: 20px; line-height: 1.9; }
+.process-row p { color: var(--muted); font-size: 14px; margin-top: 20px; line-height: 1.9; }
 .process-row .text-link { margin-top: 20px; font-size: 12px; }
 .process-row > img { width: 102px; height: 110px; object-fit: contain; margin-top: 0; }
 .practices { padding: 88px 0; background: var(--wash); }
@@ -135,7 +136,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .footer-nav h2 { font-size: 12px; font-weight: 500; letter-spacing: 0; color: #aaaab6; margin-bottom: 26px; }
 .footer-nav a { display: flex; align-items: center; gap: 8px; font-size: 12px; line-height: 1.6; min-height: 44px; }
 .footer-nav .icon { width: 14px; height: 14px; }
-.footer-bottom { display: flex; align-items: center; flex-wrap: wrap; gap: 28px; max-width: 1424px; margin: 0 auto; border-top: 1px solid #ffffff2b; padding-top: 22px; font-size: 10px; color: #c8c8d0; }
+.footer-bottom { display: flex; align-items: center; flex-wrap: wrap; gap: 28px; max-width: 1424px; margin: 0 auto; border-top: 1px solid #ffffff2b; padding-top: 22px; font-size: 11px; color: #c8c8d0; }
 .footer-bottom nav { display: flex; gap: 22px; margin-left: auto; }
 .footer-bottom a { display: inline-flex; align-items: center; min-height: 44px; }
 .back-top { gap: 12px; }
@@ -188,8 +189,8 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .hero-actions .button { font-size: 11px; padding: 16px; gap: 16px; min-height: 54px; }
   .hero-actions .text-link { font-size: 12px; }
   .hero-product figcaption > span:first-child { font-size: 16px; }
-  .hero-product figcaption { font-size: 9px; padding-left: 0; }
-  .hero-foot a { font-size: 9px; gap: 12px; }
+  .hero-product figcaption { font-size: 11px; padding-left: 0; }
+  .hero-foot a { font-size: 11px; gap: 12px; }
   .results { padding-top: 88px; padding-bottom: 88px; }
   .testimonials { gap: 7%; margin-top: 48px; }
   .testimonial figcaption { align-items: flex-start; flex-direction: column; }
@@ -231,15 +232,15 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .hero-main { grid-template-columns: 1fr; gap: 6px; padding: 36px 0 24px; }
   .hero h1 { font-size: clamp(35px, 9.8vw, 53px); line-height: 1.06; }
   .hero-copy { padding-bottom: 0; }
-  .hero-description { max-width: 350px; margin-top: 22px; font-size: 13px; }
+  .hero-description { max-width: 350px; margin-top: 22px; font-size: 14px; }
   .hero-actions { gap: 10px 20px; margin-top: 24px; }
   .hero-actions .button { min-height: 56px; font-size: 12px; padding: 17px 18px; width: 100%; }
   .hero-actions .text-link { min-height: 44px; }
   .hero-product { margin: 8px auto 0; width: 100%; max-width: 330px; }
   .bottle { max-height: 335px; width: 100%; }
-  .hero-product figcaption { flex-direction: row; align-items: baseline; margin: 8px 0 0; padding: 0; font-size: 9px; }
+  .hero-product figcaption { flex-direction: row; align-items: baseline; margin: 8px 0 0; padding: 0; font-size: 11px; }
   .hero-foot { gap: 18px; padding: 16px 0; align-items: flex-start; }
-  .hero-foot a { font-size: 9px; line-height: 1.6; gap: 10px; max-width: 56%; }
+  .hero-foot a { font-size: 11px; line-height: 1.6; gap: 10px; max-width: 56%; }
   .hero-foot .scroll-link { max-width: 40%; }
   .hero-foot .icon { width: 16px; height: 16px; }
   .section-heading { align-items: flex-start; flex-direction: column; gap: 16px; }
@@ -251,7 +252,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .testimonial figcaption { flex-direction: row; align-items: center; margin-top: 26px; gap: 16px; }
   .testimonial-lead figcaption img { width: 72px; height: 72px; }
   .testimonial figcaption strong { font-size: 11px; }
-  .testimonial figcaption span { font-size: 10px; }
+  .testimonial figcaption span { font-size: 12px; }
   .case-study { grid-template-columns: 1fr; }
   .case-image { min-height: 370px; }
   .case-image img { object-position: 13% center; }
@@ -269,7 +270,7 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .process-intro p { max-width: 340px; }
   .process-row { grid-template-columns: 26px 1fr; gap: 14px; padding: 28px 0 32px; position: relative; }
   .process-row h3 { font-size: 25px; padding-right: 48px; }
-  .process-row p { font-size: 12px; line-height: 1.9; margin-top: 22px; }
+  .process-row p { font-size: 14px; line-height: 1.9; margin-top: 22px; }
   .process-row > img { position: absolute; right: 0; top: 28px; width: 54px; height: 64px; }
   .process-row .text-link { margin-top: 16px; }
   .step-number { font-size: 11px; }
@@ -293,6 +294,6 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .footer-main { padding-bottom: 40px; }
   .footer-nav { grid-template-columns: repeat(2, 1fr); gap: 30px 20px; }
   .footer-nav h2 { margin-bottom: 14px; }
-  .footer-bottom { gap: 4px 20px; font-size: 10px; }
+  .footer-bottom { gap: 4px 20px; font-size: 11px; }
   .footer-bottom nav { flex-basis: 100%; gap: 24px; }
 }
