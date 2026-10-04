@@ -1,0 +1,9 @@
+---
+interface Props {
+  name: 'arrow' | 'arrow-up' | 'arrow-down' | 'plus';
+  class?: string;
+}
+
+const { name, class: className } = Astro.props;
+---
+<svg class:list={['icon', className]}><use href={`#${name}`}></use></svg>
