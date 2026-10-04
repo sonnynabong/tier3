@@ -1,0 +1,26 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/results",
+  "title": "Results",
+  "category": "tier3",
+  "icon": "format-quote",
+  "description": "Staggered client testimonials from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "heading": { "type": "string", "default": "See the results." },
+    "storiesLabel": { "type": "string", "default": "More client stories" },
+    "storiesUrl": { "type": "string", "default": "https://tier3media.com/results/" },
+    "leadQuote": { "type": "string", "default": "Over 80 bookings. My entire month was filled up in about two weeks! Tier3 Media is top notch!!" },
+    "leadName": { "type": "string", "default": "Dr. Connie L. Brooks - Fernandez MD" },
+    "leadMeta": { "type": "string", "default": "Allure Aesthetics" },
+    "leadImageId": { "type": "number", "default": 0 },
+    "secondaryQuote": { "type": "string", "default": "I’m a startup practice that now has more than 44 new patients per week. I’d highly recommend Tier3 Media." },
+    "secondaryName": { "type": "string", "default": "Dr. Grace Chung" },
+    "secondaryMeta": { "type": "string", "default": "Owner of Smile Shop Dental & Aesthetics<br>Henderson, Nevada" },
+    "secondaryImageId": { "type": "number", "default": 0 }
+  }
+}

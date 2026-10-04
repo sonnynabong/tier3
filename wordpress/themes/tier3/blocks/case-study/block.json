@@ -1,0 +1,24 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/case-study",
+  "title": "Case study",
+  "category": "tier3",
+  "icon": "awards",
+  "description": "Karisha Madden case study band from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "imageId": { "type": "number", "default": 0 },
+    "quote": { "type": "string", "default": "“I did $71k in brand new patients in one month.”" },
+    "subquote": { "type": "string", "default": "“Best investment ever.”" },
+    "name": { "type": "string", "default": "Dr. Karisha Madden" },
+    "meta": { "type": "string", "default": "Voted Houston’s #1 Dentist in 2018" },
+    "caseLabel": { "type": "string", "default": "View case study on Tier3 Media" },
+    "caseUrl": { "type": "string", "default": "https://tier3media.com/" },
+    "moreLabel": { "type": "string", "default": "See more results" },
+    "moreUrl": { "type": "string", "default": "https://tier3media.com/results/" }
+  }
+}

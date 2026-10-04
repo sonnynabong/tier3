@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/closing",
+  "title": "Closing",
+  "category": "tier3",
+  "icon": "editor-help",
+  "description": "Closing questions from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "titleLine1": { "type": "string", "default": "What’s" },
+    "titleLine2": { "type": "string", "default": "stopping" },
+    "titleLine3": { "type": "string", "default": "you?" },
+    "questions": {
+      "type": "array",
+      "default": [
+        "Do you feel stagnant and want to <strong>grow exponentially?</strong>",
+        "Are you stuck in the weeds with marketing and aren’t getting the <strong>results you desperately need?</strong>",
+        "Are you looking for <strong>proven shortcuts</strong> to increase brand awareness, get leads and have more bookings?",
+        "Do you have a great practice but don’t know how to <strong>attract the right patients?</strong>",
+        "Is your competition beating you with better marketing and you want a <strong>competitive edge?</strong>"
+      ]
+    },
+    "primaryLabel": { "type": "string", "default": "See if my practice qualifies" },
+    "primaryUrl": { "type": "string", "default": "https://link.growtoxsystem.com/widget/form/Ck6UhzscRDYhLSr4dPKl" },
+    "secondaryLabel": { "type": "string", "default": "See more results" },
+    "secondaryUrl": { "type": "string", "default": "https://tier3media.com/results/" }
+  }
+}

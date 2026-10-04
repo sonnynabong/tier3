@@ -1,0 +1,20 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/growth-band",
+  "title": "Growth band",
+  "category": "tier3",
+  "icon": "chart-line",
+  "description": "Coral growth call-to-action from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "heading": { "type": "string", "default": "Are you ready<br>to grow?" },
+    "primaryLabel": { "type": "string", "default": "See if my practice qualifies" },
+    "primaryUrl": { "type": "string", "default": "https://link.growtoxsystem.com/widget/form/Ck6UhzscRDYhLSr4dPKl" },
+    "secondaryLabel": { "type": "string", "default": "See more results" },
+    "secondaryUrl": { "type": "string", "default": "https://tier3media.com/results/" }
+  }
+}

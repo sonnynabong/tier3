@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/process",
+  "title": "Process",
+  "category": "tier3",
+  "icon": "list-view",
+  "description": "Three-step Growtox prescription from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "title": { "type": "string", "default": "A simple<br>prescription<br><span>for profits.</span>" },
+    "description": { "type": "string", "default": "The Growtox System is a proven, done-for-you aesthetic practice marketing solution." },
+    "steps": {
+      "type": "array",
+      "default": [
+        {
+          "number": "01",
+          "title": "We find your<br>ideal patients.",
+          "body": "Your practice doesn’t need patients. It needs the right kinds of patients. Let our experienced team dig into your area to find exactly the kinds of patients that will help you grow and keep growing a profitable practice.",
+          "linkLabel": "See the system",
+          "linkUrl": "https://tier3media.com/growtox/",
+          "iconId": 0,
+          "iconFile": "find-patients.svg"
+        },
+        {
+          "number": "02",
+          "title": "We attract your<br>ideal patients.",
+          "body": "We use the newest methods of targeting and combine them with highly converting media that lead highly qualified candidates through our new patient scheduling funnels and directly into your chair.",
+          "linkLabel": "See the system",
+          "linkUrl": "https://tier3media.com/growtox/",
+          "iconId": 0,
+          "iconFile": "attract-patients.svg"
+        },
+        {
+          "number": "03",
+          "title": "We fill<br>your schedule.",
+          "body": "We aren’t satisfied with a few new patients or a few great months. We work diligently to ensure that your schedule is full and so you can focus on incredible results for your brand-new patients.",
+          "linkLabel": "See the system",
+          "linkUrl": "https://tier3media.com/growtox/",
+          "iconId": 0,
+          "iconFile": "fill-schedule.svg"
+        }
+      ]
+    }
+  }
+}
