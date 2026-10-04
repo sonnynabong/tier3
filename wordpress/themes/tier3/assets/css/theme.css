@@ -482,3 +482,9 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
   .footer-brand .footer-email a { font-size: 17px; gap: 14px; }
   .footer-bottom .footer-social { flex-basis: 100%; margin-left: 0; gap: 24px; }
 }
+.editor-styles-wrapper .wp-block[data-type^="tier3/"] {
+  max-width: none;
+}
+.tier3-section-editor .components-disabled {
+  opacity: 1;
+}

@@ -1,6 +1,6 @@
 (function (wp) {
   const { registerBlockType } = wp.blocks;
-  const { InspectorControls, MediaUpload, MediaUploadCheck } = wp.blockEditor;
+  const { InspectorControls, MediaUpload, MediaUploadCheck, useBlockProps } = wp.blockEditor;
   const { PanelBody, TextControl, TextareaControl, Button, BaseControl } = wp.components;
   const { Fragment, createElement: el } = wp.element;
   const ServerSideRender = wp.serverSideRender;
@@ -62,13 +62,23 @@
     return el(ServerSideRender, { block: name, attributes: attributes });
   }
 
-  function editor(title, fields, name, props) {
+  function SectionEdit(props) {
+    const blockProps = useBlockProps({ className: 'tier3-section-editor' });
     return el(
       Fragment,
       {},
-      el(InspectorControls, {}, el(PanelBody, { title: title, initialOpen: true }, fields)),
-      preview(name, props.attributes)
+      el(InspectorControls, {}, el(PanelBody, { title: props.title, initialOpen: true }, props.fields)),
+      el('div', blockProps, preview(props.name, props.attributes))
     );
+  }
+
+  function editor(title, fields, name, props) {
+    return el(SectionEdit, {
+      title: title,
+      fields: fields,
+      name: name,
+      attributes: props.attributes,
+    });
   }
 
   registerBlockType('tier3/hero', {
