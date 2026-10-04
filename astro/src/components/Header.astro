@@ -1,0 +1,73 @@
+---
+import { Image } from 'astro:assets';
+import Button from './Button.astro';
+import logoCoral from '../assets/logo-coral.svg';
+import { growtoxUrl, qualifyUrl, resultsUrl, storyUrl } from '../data/site';
+---
+<header class="site-header">
+  <a class="brand" href="#" aria-label="Tier3 Media — home">
+    <Image src={logoCoral} width={163} height={48} alt="Tier3 Media" />
+  </a>
+  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation" hidden>
+    <span>Menu</span><span class="menu-lines" aria-hidden="true"></span>
+  </button>
+  <nav id="navigation" class="navigation" aria-label="Main navigation">
+    <a href={resultsUrl}>Results</a>
+    <a href={storyUrl}>Our story</a>
+    <a href={growtoxUrl}>The Growtox System<sup>™</sup></a>
+    <Button href={qualifyUrl} variant="dark" size="small">Fill my schedule</Button>
+  </nav>
+</header>
+
+<script>
+  const menuButton = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#navigation');
+  const mobileViewport = window.matchMedia('(max-width: 800px)');
+
+  if (menuButton instanceof HTMLButtonElement && navigation instanceof HTMLElement) {
+    function closeMenu({ restoreFocus = false } = {}) {
+      menuButton.setAttribute('aria-expanded', 'false');
+      const label = menuButton.querySelector('span');
+      if (label) label.textContent = 'Menu';
+      navigation.classList.remove('is-open');
+      if (restoreFocus) menuButton.focus();
+    }
+
+    function syncNavigation() {
+      closeMenu();
+      menuButton.hidden = !mobileViewport.matches;
+    }
+
+    menuButton.addEventListener('click', () => {
+      const open = menuButton.getAttribute('aria-expanded') !== 'true';
+      menuButton.setAttribute('aria-expanded', String(open));
+      const label = menuButton.querySelector('span');
+      if (label) label.textContent = open ? 'Close' : 'Menu';
+      navigation.classList.toggle('is-open', open);
+    });
+    navigation.addEventListener('click', (event) => {
+      if (event.target instanceof Element && event.target.closest('a')) closeMenu();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') {
+        closeMenu({ restoreFocus: true });
+      }
+    });
+    document.addEventListener('click', (event) => {
+      if (event.target instanceof Element && !event.target.closest('.site-header')) closeMenu();
+    });
+    document.querySelector('.site-header')?.addEventListener('focusout', (event) => {
+      const header = event.currentTarget;
+      if (
+        header instanceof HTMLElement &&
+        event.relatedTarget instanceof Node &&
+        !header.contains(event.relatedTarget)
+      ) {
+        closeMenu();
+      }
+    });
+    mobileViewport.addEventListener('change', syncNavigation);
+    syncNavigation();
+    document.documentElement.classList.add('navigation-ready');
+  }
+</script>
