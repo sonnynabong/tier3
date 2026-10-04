@@ -55,7 +55,7 @@ function enterHero() {
   document.querySelector('.bottle').animate([
     { transform: 'translateY(35px) rotate(0deg)', opacity: .4 },
     { transform: 'translateY(0) rotate(-7deg)', opacity: 1 }
-  ], { ...timing, delay: 60 });
+  ], { ...timing, delay: 60, fill: 'backwards' });
   document.querySelector('.hero-description').animate([
     { opacity: .3, transform: 'translateY(8px)' }, { opacity: 1, transform: 'translateY(0)' }
   ], { ...timing, duration: 500, delay: 140, fill: 'backwards' });
@@ -73,10 +73,12 @@ function configureReveals() {
       const kind = target.dataset.reveal;
       const motion = kind === 'image'
         ? [{ opacity: .65, clipPath: 'inset(0 0 5% 0)' }, { opacity: 1, clipPath: 'inset(0 0 0 0)' }]
-        : [{ opacity: .35, transform: `translateY(${kind === 'logo' ? 10 : 20}px)` }, { opacity: 1, transform: 'translateY(0)' }];
+        : kind === 'quote'
+          ? [{ opacity: .72 }, { opacity: 1 }]
+          : [{ opacity: .35, transform: 'translateY(16px)' }, { opacity: 1, transform: 'translateY(0)' }];
       target.animate(motion, {
-        duration: kind === 'logo' ? 500 : 650,
-        delay: kind === 'logo' || kind === 'step' ? Math.min(index * 55, 165) : 0,
+        duration: kind === 'quote' ? 520 : 650,
+        delay: kind === 'step' ? Math.min(index * 55, 165) : 0,
         easing: 'cubic-bezier(.16, 1, .3, 1)',
         fill: 'backwards'
       });
