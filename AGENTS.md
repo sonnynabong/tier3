@@ -24,3 +24,14 @@ Durable workspace facts and recurring user preferences for Tier3 Media / Growtox
 ## Impeccable finish bar
 
 Per the homepage brief, a build is not finished without finish review, a recorded verdict, `DESIGN.md`, and provenance on shipping rasters.
+
+## Learned User Preferences
+
+- Keep WordPress homepage section bands (Results, case study, growth band, process, and closing) in the centered reference column, including when theme CSS would clear the auto margins.
+
+## Learned Workspace Facts
+
+- This repository is the Tier3 demo build of the Growtox homepage, separate from the live tier3media.com production site.
+- The Astro homepage is section components: Header, Hero, Results, CaseStudy, GrowthBand, Process, Practices, Closing, and Footer.
+- WordPress homepage sections are seven dynamic blocks (hero, results, case study, growth band, process, practices, closing). Seeded copy is block attributes, edited in the Block sidebar after selecting the section; the editor canvas is a server-rendered preview.
+- The Astro favicon is the coral speech-bubble mark from tier3media.com, stored as PNGs in `astro/public/`.
