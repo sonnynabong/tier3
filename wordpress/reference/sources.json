@@ -1,0 +1,157 @@
+{
+  "verified_on": "2026-10-04",
+  "homepage": "https://tier3media.com/",
+  "assets": [
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/06/tier3media-logo-white.svg",
+      "original": "assets/originals/logo-white.svg",
+      "sha256": "1311ebf286f54331da53c45cf42be4107cc8edfb01ace0302feb828b66aad8d0",
+      "local": "assets/logo-white.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/06/tier-3-logo-red.svg",
+      "original": "assets/originals/logo-coral.svg",
+      "sha256": "b861318bc4b3a580c0e9c357accdefcbc54e0b0b8a235381bc53b076e6d3f949",
+      "local": "assets/logo-coral.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/06/growtox-btl-lg.png",
+      "original": "assets/originals/growtox.png",
+      "sha256": "53db9c2edf02ae8696010a4c85c880129a5d4fdfe3140e8a5a2a221da95e32aa",
+      "local": "assets/growtox.webp",
+      "width": 750,
+      "height": 836
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/connie-brooks.jpg",
+      "original": "assets/originals/connie-brooks.jpg",
+      "sha256": "16896b4cd535fe9cff2275edc798fe2f0e20df754e68e56e00ae7b33d82bc72d",
+      "local": "assets/connie-brooks.webp",
+      "width": 267,
+      "height": 267
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2024/06/Chung.jpg",
+      "original": "assets/originals/grace-chung.jpg",
+      "sha256": "39e2561315fbf57cf0f745083321b87cf719e96d2150a0154f193e7005444ea8",
+      "local": "assets/grace-chung.webp",
+      "width": 100,
+      "height": 100
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/madden-desktop.jpg",
+      "original": "assets/originals/karisha-madden.jpg",
+      "sha256": "4e82e63bfc4c007ac3558e5bc7575f300f2fb7baae43c8e992ff896179ee8461",
+      "local": "assets/karisha-madden.webp",
+      "width": 1800,
+      "height": 987
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/06/madden-quote-white.svg",
+      "original": "assets/originals/madden-quote-white.svg",
+      "sha256": "b13b044ba684911f5ccd5b21cf24ee508203a64569538d77b40a7b7324b20eb0",
+      "local": "assets/madden-quote-white.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/06/madden-quote-red.svg",
+      "original": "assets/originals/madden-quote-red.svg",
+      "sha256": "1354c2acffcc9dd8f41d4bfc1c4a096f5f5f880a9543bd1342350c292e2be2e0",
+      "local": "assets/madden-quote-red.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/find-patients.svg",
+      "original": "assets/originals/find-patients.svg",
+      "sha256": "9c9c475261f6ce5843ebad82af11eff7c1d2d4e6879ad339d010edb6a9c40c68",
+      "local": "assets/find-patients.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/attrack-patients.svg",
+      "original": "assets/originals/attract-patients.svg",
+      "sha256": "5116732d086d2417f58f3696bbe739467095b7bf42274c666d84dfe67ce8aab2",
+      "local": "assets/attract-patients.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/fill-schedule.svg",
+      "original": "assets/originals/fill-schedule.svg",
+      "sha256": "143f4fcfa945737e254c271b260bf444de6c48999f1ccb27abc99637585c2c8f",
+      "local": "assets/fill-schedule.svg"
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/allure.png",
+      "original": "assets/originals/allure.png",
+      "sha256": "eb68e8f312f3254867018c6f25f69266e1a556bccf50672f26c83d81e234f774",
+      "local": "assets/allure.webp",
+      "width": 176,
+      "height": 97
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/refine-logo.png",
+      "original": "assets/originals/refine.png",
+      "sha256": "1c7c412144db87b9fec9b5cd92eeee200dc2988f17c231887e91bc8e650ac37d",
+      "local": "assets/refine.webp",
+      "width": 450,
+      "height": 288
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/destin-logo-black.png",
+      "original": "assets/originals/destin.png",
+      "sha256": "d3580325798f08ff13a5e04c578d855d3aa1ee08be02feb14c618f4d12b4a116",
+      "local": "assets/destin.webp",
+      "width": 600,
+      "height": 317
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/metro-logo.png",
+      "original": "assets/originals/metro.png",
+      "sha256": "a72d0489e4e3e01c51450beca2c7e47ac85e8a14520ee0c3ab06c9b060e4a5be",
+      "local": "assets/metro.webp",
+      "width": 900,
+      "height": 527
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/facial-aesthetics-team-sm.png",
+      "original": "assets/originals/facial-aesthetics.png",
+      "sha256": "c0fbaf0dfc0ca65b2b3a02172fbafebcf2ba87cec8e88140bf43c57b1742e702",
+      "local": "assets/facial-aesthetics.webp",
+      "width": 1000,
+      "height": 101
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/lasting-impressions.png",
+      "original": "assets/originals/lasting-impressions.png",
+      "sha256": "ac95117a161e5e023f63c84f24038ba93f68e842e6668a8dd6495e7cfe434bef",
+      "local": "assets/lasting-impressions.webp",
+      "width": 326,
+      "height": 150
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/essential-logo-web.png",
+      "original": "assets/originals/essential.png",
+      "sha256": "d0acfa6adf38fd0d2c9ebbba0226ca1033c808a74eb24b8763caf4818c5ef133",
+      "local": "assets/essential.webp",
+      "width": 1067,
+      "height": 313
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2021/02/logo-purple.png",
+      "original": "assets/originals/smile-shop.png",
+      "sha256": "e8ce5fee9b44965cd83bb9f8a72c7aa1f88eb93bf71d24be2686f08a801d5066",
+      "local": "assets/smile-shop.webp",
+      "width": 1000,
+      "height": 443
+    },
+    {
+      "source": "https://tier3media.com/wp-content/uploads/2019/04/TrouveMedspa_logo.png",
+      "original": "assets/originals/trouve.png",
+      "sha256": "1af718ed7800f92e721b5198f3e01c3cb4689dc4547c3e4b363c88c18266ed1e",
+      "local": "assets/trouve.webp",
+      "width": 316,
+      "height": 150
+    },
+    {
+      "sha256": "06b16db7a969135d48d38c49183be7fb88d4452e2a3011957c7851941f4e4879",
+      "local": "assets/fonts/montserrat-latin.woff2",
+      "source": "https://fonts.gstatic.com/s/montserrat/v31/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2"
+    }
+  ]
+}
