@@ -1,0 +1,86 @@
+---
+import { Picture } from 'astro:assets';
+import Button from './Button.astro';
+import Icon from './Icon.astro';
+import TextLink from './TextLink.astro';
+import growtox from '../assets/growtox.webp';
+import { growtoxUrl, qualifyUrl, resultsUrl } from '../data/site';
+---
+<div class="hero-cointaier">
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero-main">
+      <div class="hero-copy">
+        <h1 id="hero-title">
+          <span class="hero-line">Inject your</span>
+          <span class="hero-line">practice with</span>
+          <span class="hero-line hero-emphasis">more patients!</span>
+        </h1>
+        <p class="hero-description">
+          The Growtox Schedule-Filler System™ is your secret weapon to building a wildly successful aesthetics practice.
+        </p>
+        <div class="hero-actions">
+          <Button href={qualifyUrl} variant="violet">See if my practice qualifies</Button>
+          <TextLink href={resultsUrl} icon="arrow">See the results</TextLink>
+        </div>
+      </div>
+      <figure class="hero-product">
+        <Picture
+          class="bottle"
+          src={growtox}
+          formats={['avif', 'webp']}
+          fallbackFormat="webp"
+          alt="Growtox Aesthetics Schedule-Filler bottle, Tier3 Media’s marketing system artwork"
+          width={750}
+          height={836}
+          widths={[375, 540, 750]}
+          sizes="(max-width: 560px) 330px, (max-width: 1100px) 42vw, 540px"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+        <figcaption>
+          <span>Growtox<sup>™</sup></span>
+          <span>The Schedule-Filler System</span>
+        </figcaption>
+      </figure>
+    </div>
+    <div class="hero-foot">
+      <a href={growtoxUrl}>A simple prescription for profits <Icon name="arrow-up" /></a>
+      <a href="#results" class="scroll-link">Explore the results <Icon name="arrow-down" /></a>
+    </div>
+  </section>
+</div>
+
+<script>
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  function enterHero() {
+    if (reducedMotion.matches || typeof Element.prototype.animate !== 'function') return;
+    const timing = { duration: 680, easing: 'cubic-bezier(.16, 1, .3, 1)' };
+    document.querySelectorAll('.hero-line').forEach((line, index) => {
+      line.animate(
+        [
+          { transform: 'translateY(24px)', opacity: 0.3, clipPath: 'inset(0 0 24% 0)' },
+          { transform: 'translateY(0)', opacity: 1, clipPath: 'inset(0 0 0 0)' },
+        ],
+        { ...timing, delay: index * 65, fill: 'backwards' },
+      );
+    });
+    document.querySelector('.bottle')?.animate(
+      [
+        { transform: 'translateY(35px) rotate(0deg)', opacity: 0.4 },
+        { transform: 'translateY(0) rotate(-7deg)', opacity: 1 },
+      ],
+      { ...timing, delay: 60, fill: 'backwards' },
+    );
+    document.querySelector('.hero-description')?.animate(
+      [
+        { opacity: 0.3, transform: 'translateY(8px)' },
+        { opacity: 1, transform: 'translateY(0)' },
+      ],
+      { ...timing, duration: 500, delay: 140, fill: 'backwards' },
+    );
+  }
+
+  enterHero();
+</script>
