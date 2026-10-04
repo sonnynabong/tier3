@@ -1,0 +1,12 @@
+---
+import Button from './Button.astro';
+import TextLink from './TextLink.astro';
+import { qualifyUrl, resultsUrl } from '../data/site';
+---
+<section class="growth-band" aria-labelledby="growth-title">
+  <h2 id="growth-title">Are you ready<br />to grow?</h2>
+  <div class="growth-actions">
+    <Button href={qualifyUrl} variant="dark">See if my practice qualifies</Button>
+    <TextLink href={resultsUrl} icon="arrow">See more results</TextLink>
+  </div>
+</section>
