@@ -303,16 +303,17 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 
 /* WordPress block wrappers and Site Editor chrome */
 .wp-site-blocks > * { margin-block-start: 0; }
-.wp-block-post-content > * { margin: 0; }
-.wp-block-group { margin: 0; }
+.wp-block-post-content > * { margin-block: 0; }
+.wp-block-group { margin-block: 0; }
 .has-global-padding { padding: 0 !important; }
-.wp-block-tier3-hero,
-.wp-block-tier3-results,
-.wp-block-tier3-case-study,
-.wp-block-tier3-growth-band,
-.wp-block-tier3-process,
-.wp-block-tier3-practices,
-.wp-block-tier3-closing { max-width: none; }
+.wp-block-post-content > .results,
+.wp-block-post-content > .process,
+.wp-block-post-content > .closing,
+.wp-block-post-content > .case-study,
+.wp-block-post-content > .growth-band {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .site-header.wp-block-group {
   position: sticky;
@@ -330,11 +331,18 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 .site-header .wp-block-site-logo a { display: block; }
 .site-header .wp-block-site-logo img,
 .site-header .custom-logo { width: 163px; height: 48px; object-fit: contain; }
-.header-tools { margin-left: auto; gap: clamp(24px, 3vw, 48px); }
+.site-header .header-tools,
+.site-header .header-tools.is-layout-flex {
+  margin-left: auto;
+  gap: clamp(24px, 3vw, 48px);
+}
 .site-header .wp-block-navigation { font-size: 13px; font-weight: 600; }
 .site-header .wp-block-navigation a { font-size: 13px; font-weight: 600; }
 .site-header .wp-block-navigation a:hover { color: var(--violet); }
-.site-header .wp-block-navigation__container { gap: clamp(24px, 3vw, 48px); }
+.site-header .wp-block-navigation__container,
+.site-header .wp-block-navigation__container.is-layout-flex {
+  gap: clamp(24px, 3vw, 48px);
+}
 .site-header .header-cta { margin: 0; }
 .site-header .wp-block-button { margin: 0; }
 .site-header .wp-block-button .wp-element-button {
@@ -461,6 +469,8 @@ sup { font-size: .45em; line-height: 0; vertical-align: super; }
 @media (max-width: 1100px) {
   .site-header.wp-block-group { padding: 18px 28px; min-height: 84px; }
   .site-header .wp-block-site-logo img { width: 142px; height: 42px; }
+  .site-header .header-tools.is-layout-flex,
+  .site-header .wp-block-navigation__container.is-layout-flex { gap: 24px; }
 }
 @media (max-width: 800px) {
   .site-header.wp-block-group { padding: 15px 24px; min-height: 76px; }
