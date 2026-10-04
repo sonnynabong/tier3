@@ -1,0 +1,34 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/hero",
+  "title": "Hero",
+  "category": "tier3",
+  "icon": "cover-image",
+  "description": "Bottle-led Growtox hero from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": {
+    "html": false,
+    "anchor": false,
+    "multiple": true
+  },
+  "attributes": {
+    "titleLine1": { "type": "string", "default": "Inject your" },
+    "titleLine2": { "type": "string", "default": "practice with" },
+    "titleLine3": { "type": "string", "default": "more patients!" },
+    "description": { "type": "string", "default": "The Growtox Schedule-Filler System™ is your secret weapon to building a wildly successful aesthetics practice." },
+    "primaryLabel": { "type": "string", "default": "See if my practice qualifies" },
+    "primaryUrl": { "type": "string", "default": "https://link.growtoxsystem.com/widget/form/Ck6UhzscRDYhLSr4dPKl" },
+    "secondaryLabel": { "type": "string", "default": "See the results" },
+    "secondaryUrl": { "type": "string", "default": "https://tier3media.com/results/" },
+    "bottleId": { "type": "number", "default": 0 },
+    "captionBrand": { "type": "string", "default": "Growtox<sup>™</sup>" },
+    "captionSystem": { "type": "string", "default": "The Schedule-Filler System" },
+    "footLeftLabel": { "type": "string", "default": "A simple prescription for profits" },
+    "footLeftUrl": { "type": "string", "default": "https://tier3media.com/growtox/" },
+    "footRightLabel": { "type": "string", "default": "Explore the results" },
+    "footRightUrl": { "type": "string", "default": "#results" }
+  }
+}

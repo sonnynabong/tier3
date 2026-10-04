@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "tier3/practices",
+  "title": "Practices",
+  "category": "tier3",
+  "icon": "groups",
+  "description": "Client practice logo grid from the reference homepage.",
+  "textdomain": "tier3",
+  "editorScript": "tier3-editor",
+  "render": "file:./render.php",
+  "supports": { "html": false },
+  "attributes": {
+    "heading": { "type": "string", "default": "Join these<br>growing practices." },
+    "subheading": { "type": "string", "default": "And many more." },
+    "linkLabel": { "type": "string", "default": "See what they’re saying" },
+    "linkUrl": { "type": "string", "default": "https://tier3media.com/results/" },
+    "logos": {
+      "type": "array",
+      "default": [
+        { "id": 0, "alt": "Allure Aesthetics", "file": "allure.webp" },
+        { "id": 0, "alt": "Refine Medical Spa", "file": "refine.webp" },
+        { "id": 0, "alt": "Destin Botox", "file": "destin.webp" },
+        { "id": 0, "alt": "Metro Medspa", "file": "metro.webp" },
+        { "id": 0, "alt": "Facial Aesthetics Team", "file": "facial-aesthetics.webp" },
+        { "id": 0, "alt": "Lasting Impressions Medical Aesthetics", "file": "lasting-impressions.webp" },
+        { "id": 0, "alt": "Essential Aesthetics", "file": "essential.webp" },
+        { "id": 0, "alt": "Smile Shop Aesthetics", "file": "smile-shop.webp" },
+        { "id": 0, "alt": "Trouvé Medspa", "file": "trouve.webp" }
+      ]
+    }
+  }
+}
